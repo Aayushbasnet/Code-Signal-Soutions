@@ -27,3 +27,29 @@ Note: sequence a0, a1, ..., an is considered to be a strictly increasing if
 
     [output] boolean
         Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return false. */
+
+// My solution in js
+const sequence = [3,2,1];
+function solution(sequence) {
+    let bad = 0;
+    for(let i = 0 ; i < sequence.length -1 ; i++){
+        if(sequence[i] >= sequence[i+1]){
+            bad++;
+            if(bad > 1) return false;
+            if(sequence[i] >= sequence[i+2] && sequence[i-1] >=sequence[i+1]) return false;
+        }
+    }
+    return true;
+}
+
+/* // Top(1) solution in js
+    function solution(seq) {
+        var bad=0
+        for(var i=1;i<seq.length;i++) if(seq[i]<=seq[i-1]) {
+        bad++
+        if(bad>1) return false
+        if(seq[i]<=seq[i-2]&&seq[i+1]<=seq[i-1]) return false
+        }
+        return true
+    }
+*/
