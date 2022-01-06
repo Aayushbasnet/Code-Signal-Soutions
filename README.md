@@ -10,7 +10,7 @@
 ***
  
 ## TASK
-### [ARCADE](https://app.codesignal.com/arcade)
+### [ARCADE UNIVERSE](https://app.codesignal.com/arcade)
 > - Intro 
 > - The Core
 > - Databases
