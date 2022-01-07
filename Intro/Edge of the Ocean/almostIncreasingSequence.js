@@ -53,3 +53,16 @@ function solution(sequence) {
         return true
     }
 */
+
+/* // Solution description 
+        The problem can be broken down to smaller questions. For each element in the list...
+            Is the current element greater than the last (increasing)?
+                Yes...
+                    Good! We don't need to do anything.
+                No...
+                    Has this happened already? If so, it's not almost increasing.
+                    If we remove the previous item, are the surrounding items fixed?
+                    No? What if we remove the current item instead?
+                    Still no? Then that means we can't solve this in one move. It's not almost increasing.
+*/
+
